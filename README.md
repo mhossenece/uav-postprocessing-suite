@@ -88,24 +88,17 @@ Available at: https://github.com/mhossenece/uav-postprocessing-suite
 
 🛠 Requirements
 MATLAB R2020b or later
-
 Mapping Toolbox (for geofence KML parsing)
-
 Log files: controller_log.txt, vehicleOut.txt
 
 
 🤝 Contributions
 Pull requests and forks for academic collaboration are welcome.
 
-sql
-Copy
-Edit
-
 ---
 
 ## ✅ 2. `LICENSE` (Academic Use Only Template)
 
-```txt
 MIT License (Academic Use Only Variant)
 
 Copyright (c) 2025 Md Sharif Hossen
