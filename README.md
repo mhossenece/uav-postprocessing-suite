@@ -114,24 +114,24 @@ Log files: controller_log.txt, vehicleOut.txt
 Pull requests and forks for academic collaboration are welcome.
 
 ---
+## 📄 License
 
-## ✅ 2. `LICENSE` (Academic Use Only Template)
+This software is licensed for **academic and research use only**.  
+© 2025 Md Sharif Hossen – All rights reserved.
+
+### License Terms (Academic Use Only)
 
 MIT License (Academic Use Only Variant)
 
-Copyright (c) 2025 Md Sharif Hossen
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to use,
-copy, modify, merge, and publish the Software for **academic and non-commercial
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to use,  
+copy, modify, merge, and publish the Software for **academic and non-commercial  
 research purposes only**, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+> The above copyright notice and this permission notice shall  
+> be included in all copies or substantial portions of the Software.
 
-Commercial use, sublicensing, or redistribution of the Software or its
-derivatives is not permitted without explicit prior written permission from
-the author.
+Commercial use, sublicensing, or redistribution of the Software or its  
+derivatives is **not permitted** without prior written permission from the author.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
