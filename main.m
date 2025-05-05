@@ -27,7 +27,7 @@
 % Copyright (c) 2025 Md Sharif Hossen  
 % All rights reserved. This work is licensed for academic and research use only.
 %
-% If you use this suite or dataset in your research, please cite:
+% If you use this suite in your research, please cite:
 %   Md Sharif Hossen. UAV Post-Processing Suite. Available at:
 %   https://github.com/mhossenece/uav-postprocessing-suite
 %--------------------------------------------------------------------------
