@@ -72,7 +72,7 @@ Figures are saved in the `/figs` directory:
 This framework was developed as part of the **AERPAW Autonomous Data Mule (AADM) Challenge #2**, a UAV competition organized by the **AERPAW platform**. The objective is to design UAV algorithms that dynamically optimize trajectory and base station selection to maximize throughput and minimize latency under real-time constraints.
 
 Learn more about the AADM Challenge here:  
-👉 [AERPAW AADM Student Challenge](https://aerpaw.org/challenge)
+👉 [AERPAW AADM Student Challenge](https://aerpaw.org/aerpaw-aadm-challenge/)
 
 ---
 
