@@ -70,4 +70,57 @@ Figures are saved in the `/figs` directory:
 ## 📚 Citation
 
 If you use this suite in your research, please cite:
+Md Sharif Hossen. UAV Post-Processing Suite.
+Available at: https://github.com/mhossenece/uav-postprocessing-suite
+
+---
+
+### 📌 BibTeX Citation
+
+```bibtex
+@misc{hossen2025uavpost,
+  author       = {Md Sharif Hossen},
+  title        = {{UAV Post-Processing Suite: MATLAB Toolkit for Analyzing UAV-Assisted Wireless Data Collection Missions}},
+  year         = {2025},
+  howpublished = {\url{https://github.com/mhossenece/uav-postprocessing-suite}},
+  note         = {Version 1.0. Accessed: 2025-05-04}
+}
+
+🛠 Requirements
+MATLAB R2020b or later
+
+Mapping Toolbox (for geofence KML parsing)
+
+Log files: controller_log.txt, vehicleOut.txt
+
+
+🤝 Contributions
+Pull requests and forks for academic collaboration are welcome.
+
+sql
+Copy
+Edit
+
+---
+
+## ✅ 2. `LICENSE` (Academic Use Only Template)
+
+```txt
+MIT License (Academic Use Only Variant)
+
+Copyright (c) 2025 Md Sharif Hossen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+copy, modify, merge, and publish the Software for **academic and non-commercial
+research purposes only**, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+Commercial use, sublicensing, or redistribution of the Software or its
+derivatives is not permitted without explicit prior written permission from
+the author.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
