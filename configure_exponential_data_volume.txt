@@ -1,0 +1,67 @@
+For this ranking, we consider a total data volume of 3000 Mbits and define two challenge vectors:
+
+Challenge-1 (unordered): [1931.74, 96.18, 710.65, 261.43]
+Challenge-2 (ordered): [1931.74, 710.65, 261.43, 96.18]
+
+Let’s say you want to work with the data volume mentioned in Challenge-1. The question is: how can you work with this exponentially distributed data volume? Or, how can you assign the data volume to each base station (BS)?
+
+To do this, you should access the node that represents the Controller (LW1). There is no need to configure the following steps for the other nodes (UAV, LW2, LW3, LW4); only perform them on LW1.
+
+You can choose one of the following methods:
+
+(i) Update the uniform.txt file:
+Type the following in the LW1 EVM console:
+	nano /root/Profiles/AADMChallenge/Coordinator/uniform.txt
+
+Then, remove any existing values and replace them with:
+	1931.74
+	96.18
+	710.65
+	261.43
+
+After that, press Ctrl+S to save and Ctrl+X to exit.
+
+
+(ii) Modify the controllerHelper.sh script:
+Type: 
+	nano /root/Profiles/ProfileScripts/Other/Helpers/controllerHelper.sh
+You will see:
+	PYTHONUNBUFFERED=1 python3 Controller.py --file $VOLUME_FILE
+	# PYTHONUNBUFFERED=1 python3 Controller.py --volumes 100 200 300 234
+
+Comment out the first line:
+	#PYTHONUNBUFFERED=1 python3 Controller.py --file $VOLUME_FILE
+Then uncomment and modify the second line as follows:
+	PYTHONUNBUFFERED=1 python3 Controller.py --volumes 1931.74 96.18 710.65 261.43
+
+So the final result should look like:
+	#PYTHONUNBUFFERED=1 python3 Controller.py --file $VOLUME_FILE
+	PYTHONUNBUFFERED=1 python3 Controller.py --volumes 1931.74 96.18 710.65 261.43
+
+Save and exit using Ctrl+S and Ctrl+X.
+
+(iii) Modify both controllerHelper.sh and exponential.txt:
+Open the helper script:
+	nano /root/Profiles/ProfileScripts/Other/Helpers/controllerHelper.sh
+Change the file reference from uniform.txt to exponential.txt:
+	VOLUME_FILE="exponential.txt"  # Path to your file
+Then open the exponential file:
+	nano /root/Profiles/AADMChallenge/Coordinator/exponential.txt
+Replace the existing values with:
+	1931.74
+	96.18
+	710.65
+	261.43
+Save and exit using Ctrl+S and Ctrl+X.
+
+
+Once you have set the data volume, you donot need to repeat these steps. Your experiment is now ready to use the exponential data volume assigned to each BS.
+
+After using one of the three approaches, and once your UAV reaches an altitude of 25 meters, you can verify the data volume on the portable node's EVM by running:
+	cat /root/Profiles/AADMChallenge/PortableNode/dv.txt
+
+[Optional – only if necessary]
+If you find that the expected data volume is not being set correctly, re-copy the controller script before starting the experiment:
+	cp /root/Profiles/ProfileScripts/Other/Samples/startAADMCoordinator.sh /root/Profiles/ProfileScripts/Other/startController.sh
+
+
