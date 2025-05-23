@@ -3,7 +3,6 @@
 📡 **UAV-Assisted Wireless Data Collection Analysis Toolkit**  
 Author: [Md Sharif Hossen](https://github.com/mhossenece)  
 PhD Student, Electrical and Computer Engineering, NCSU  
-Advisors: Dr. Ismail Guvenc and Dr. Vijay K. Shah  
 Date: May 4, 2025
 
 ---
