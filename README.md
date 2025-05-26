@@ -64,6 +64,7 @@ Figures are saved in the `/figs` directory:
 - `data_volume_per_base_station.png` — Initial data volume chart
 - `remaining_data_barplot.png` — Data left uncollected
 - `uav_download_metrics.png` — Score breakdown
+- `time_snr.png` — SNR variation from multiple base stations over time with UAV distance traveled
 
 ---
 
