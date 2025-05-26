@@ -190,7 +190,8 @@ end
 
 ylabel('Cumulative Downloaded Data (Mbits)', 'FontSize', fontSize);
 %ylim([0, initial_volume + 50]);
-xlim([0,405]) %change this if needed
+xlim([0, max(time_sec)])
+
 
 % Plot cumulative distance
 yyaxis right;

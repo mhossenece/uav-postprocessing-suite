@@ -1,36 +1,8 @@
-%--------------------------------------------------------------------------
-% Script: volume_bar_plot.m
-%
-% Description:
-% This script visualizes the initial data volume assigned to each base
-% station (LW1–LW4) by reading values from `volume.txt`. The script:
-%   - Reads per-cell volume values
-%   - Plots a color-coded bar graph with numerical labels on top
-%   - Saves the output figure as a high-resolution PNG
-%
-% Input:
-%   - volume.txt : Comma-separated file listing per-BS data volumes
-%
-% Output:
-%   - figs/data_volume_per_base_station.png : Volume bar chart
-%
-% Author: Md Sharif Hossen  
-% PhD Student, Department of Electrical and Computer Engineering, NCSU  
-% Advisors: Dr. Ismail Guvenc and Dr. Vijay K. Shah  
-% Date: May 4, 2025
-%
-% Copyright (c) 2025 Md Sharif Hossen  
-% All rights reserved. This work is licensed for academic and research use only.
-%
-% If you use this script or dataset in your research, please cite:
-%   Md Sharif Hossen. UAV Post-Processing Suite. Available at:
-%   https://github.com/mhossenece/uav-postprocessing-suite
-%--------------------------------------------------------------------------
+% volume_bar_plot.m
+% Plot data volumes for LW1-LW4 based on volume.txt values
 
-
-%clc
+clc
 clear
-close all
 
 % Read data volume from text file
 volumes = dlmread('volume.txt', ',');  
@@ -65,11 +37,9 @@ set(gca, 'XTickLabel', base_stations, 'FontSize', 14);
 ylabel('Data Volume (Mbits)', 'FontSize', 14);
 xlabel('Base Station', 'FontSize', 14);
 ytickformat('%.0f')
-grid on
-box on
-
-% Save figures
-set(gcf, 'PaperPositionMode', 'auto');
+grid on;
+box on;
+hold off;
 
 % Create the directory if it doesn't exist
 if ~exist('figs', 'dir')

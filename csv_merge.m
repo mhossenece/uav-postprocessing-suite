@@ -20,6 +20,7 @@
 %
 % Author: Md Sharif Hossen  
 % PhD Student, Department of Electrical and Computer Engineering, NCSU  
+% Advisors: Dr. Ismail Guvenc and Dr. Vijay K. Shah  
 % Date: May 4, 2025
 %
 % Copyright (c) 2025 Md Sharif Hossen  

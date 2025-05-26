@@ -77,7 +77,7 @@ function plot_uav_snr_distance(csv_file)
     end
     ylabel('SNR (dB)');
     %ylim([-80, 50]);
-    xlim([0, 410])
+    xlim([0, max(time_in_seconds)])
 
     yyaxis right
     plot(time_in_seconds, distances, 'Color', [0.4 0.26 0.13], 'LineWidth', 1.5, ...

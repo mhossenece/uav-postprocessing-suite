@@ -1,3 +1,17 @@
+% MATLAB Script: Cumulative Download vs. Time with Distance Overlay
+% Author: Md Sharif Hossen, PhD Student, ECE, NCSU
+% Advisor: Dr. Ismail Guvenc and Dr. Vijay K. Shah
+% Date: 05/04/2025
+
+% -------------------------------------------------------------------------
+% Description: This script orchestrates a complete workflow for evaluating 
+% UAV-assisted wireless data collection from multiple base stations. It:
+%  - Converts raw telemetry (SNR, download, vehicle) logs from text to CSV
+%  - Merges data from different sources into a unified timeline
+%  - Computes total data volumes, cumulative downloads, and scoring metrics
+%  - Visualizes UAV trajectories, download progress, remaining data, and final scores
+%
+%--------------------------------------------------------------------------
 % Script: main.m
 %
 % Description:
@@ -21,12 +35,13 @@
 %
 % Author: Md Sharif Hossen  
 % PhD Student, Department of Electrical and Computer Engineering, NCSU  
+% Advisors: Dr. Ismail Guvenc and Dr. Vijay K. Shah  
 % Date: May 4, 2025
 %
 % Copyright (c) 2025 Md Sharif Hossen  
 % All rights reserved. This work is licensed for academic and research use only.
 %
-% If you use this suite in your research, please cite:
+% If you use this suite or dataset in your research, please cite:
 %   Md Sharif Hossen. UAV Post-Processing Suite. Available at:
 %   https://github.com/mhossenece/uav-postprocessing-suite
 %--------------------------------------------------------------------------
@@ -53,6 +68,7 @@ run('extract_last_download.m')
 %plot
 run('plot_geofence_trajectory.m')
 run('uav_cumulative_download_plot.m')
+run('plot_snr_time.m')
 run('volume_bar_plot.m')
 run('plot_remaining_data.m')
 run('plot_uav_score.m')
