@@ -42,6 +42,7 @@ This MATLAB-based post-processing suite provides a full pipeline to evaluate the
 | `volume_bar_plot.m`       | Bar chart of initial assigned data volumes                                  |
 | `plot_remaining_data.m`   | Bar chart of remaining data per base station                                |
 | `plot_uav_score.m`        | Visualizes final S1, S2, and combined score                                  |
+| `plot_snr_time.m`	| Visualizes time-varying SNR from multiple base stations with UAV distance |
 
 ---
 
